@@ -1,17 +1,17 @@
 IT Elective 1 - Final Project
 
-# 🤝 Team Members
+#Team Members
     * Dagle,Adhonyz Jefferzon R. 
     * Dian, Bea Sharysse 
     * Lingahan, Ayanna Mae 
 
-# 📝 Project Overview
+#Project Overview
 
 This project is a web-based Delivery Tracking System for ContainerBoard and Packaging Company Inc. developed as the final project for IT Elective 1. It aims to   streamlines the delivery operations, reduce repetitive manual tasks and minimize delays and errors.
 
 The system demonstrates fundamental web development concepts and integration with cloud services for deployment and potential backend functionalities.
 
-## ✨ Features
+#Features
 User Login/Authentication: (in a static login page, so anyone can access it for the meantime.)
 Dashboard/Data Display Page:
     * shows current status of delivery operations
@@ -19,7 +19,7 @@ Deliveries Page:
     * shows every details of each customer
     * can update each status and add new customer with its info.
 
-# 💻 Technologies Used
+#Technologies Used
 Frontend:
     * HTML5
     * CSS3
@@ -32,7 +32,7 @@ Cloud Platform & Hosting:
     * GitHub
 
 
-# ⚙️ Deployment Process (Briefly explain the steps you took)
+#Deployment Process
 
 The project was deployed using the Firebase Command Line Interface (CLI).
 
@@ -45,7 +45,7 @@ The project was deployed using the Firebase Command Line Interface (CLI).
 7.  Deploying the project using `firebase deploy`.
 
 
-# 🗓️ Development Log / Milestones 
+#Development Log
 
 * **[Date, e.g., June 5, 2025]:** Initial repository setup and project initialization.
 * **[Date, e.g., June 6, 2025]:** Developed Frontend and Backend`Dashboard.html` and `login.html` structure we combine it.
