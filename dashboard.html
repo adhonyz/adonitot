@@ -339,13 +339,13 @@
         }
 
         .status-urgent { background-color: #fbbf24; color: #92400e; }
-        .status-low { background-color: #10b981; color: #065f46; } /* Used for 'low' priority and 'delivered' status */
-        .status-inactive { background-color: #6b7280; color: #fff; } /* Not currently used but kept for consistency */
+        .status-low { background-color: #10b981; color: #065f46; } 
+        .status-inactive { background-color: #6b7280; color: #fff; } 
         .status-with-stock { background-color: #3b82f6; color: #1e40af; }
         .status-no-stock { background-color: #ef4444; color: #991b1b; }
         .status-delivered { background-color: #10b981; color: #065f46; }
         .status-pending { background-color: #f59e0b; color: #92400e; }
-        .status-in-transit { background-color: #8b5cf6; color: #5b21b6; } /* Used for 'pre-ops' and 'high' priority */
+        .status-in-transit { background-color: #8b5cf6; color: #5b21b6; } 
         .status-finished { background-color: #22c55e; color: #166534; }
         .status-completed { background-color: #22c55e; color: #166534; }
 
@@ -446,8 +446,8 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5);
-            justify-content: center; /* Center modal horizontally */
-            align-items: center; /* Center modal vertically */
+            justify-content: center; 
+            align-items: center; 
         }
 
         .modal-content {
@@ -561,7 +561,7 @@
         }
 
         .hidden {
-            display: none !important; /* Use !important to ensure override */
+            display: none !important; 
         }
 
         /* View Modal Specific Styles */
@@ -634,7 +634,7 @@
 
         .logistics-table-container {
             margin-bottom: 40px;
-            padding: 0 20px; /* Adjust padding if needed */
+            padding: 0 20px;
         }
         .logistics-table-container:last-child {
              margin-bottom: 20px;
@@ -940,22 +940,22 @@
     </div>
 
     <script>
-        // Sample data for Deliveries Management
+        
         let deliveries = [
             {
                 id: 1,
                 orderNo: '#1',
                 customer: 'Panasonic',
-                status: 'urgent', // This is the 'Status' column in table
+                status: 'urgent', 
                 stock: 'with-stock',
                 priority: 'pre-ops',
                 driver: 'Justin Santos',
-                created: '2025-06-08T23:40', // Example: 'YYYY-MM-DDTHH:MM'
+                created: '2025-06-08T23:40', 
                 startTime: '2025-06-08T23:30',
                 endTime: '2025-06-09T00:15',
-                deliveryStatus: 'delivered', // This is the 'Delivery Status' column
+                deliveryStatus: 'delivered', 
                 finished: 'finished',
-                location: 'warehouse1' // Added for filtering
+                location: 'warehouse1' 
             },
             {
                 id: 2,
@@ -963,14 +963,14 @@
                 customer: 'Honda Parts',
                 status: 'pending',
                 stock: 'no-stock',
-                priority: 'high', // Changed from pre-ops to high for variety
+                priority: 'high', 
                 driver: 'Maria Cruz',
                 created: '2025-06-05T08:10',
                 startTime: '2025-06-05T08:30',
                 endTime: '2025-06-05T09:45',
-                deliveryStatus: 'pending', // Changed to pending for example
+                deliveryStatus: 'pending', 
                 finished: 'pending',
-                location: 'warehouse2' // Added for filtering
+                location: 'warehouse2'
             },
             {
                 id: 3,
@@ -978,14 +978,14 @@
                 customer: 'Insitu',
                 status: 'urgent',
                 stock: 'with-stock',
-                priority: 'low', // Changed from pre-ops to low for variety
+                priority: 'low', 
                 driver: 'Justin Santos',
                 created: '2025-06-01T23:00',
                 startTime: '2025-06-01T23:45',
                 endTime: '2025-06-02T00:15',
-                deliveryStatus: 'in-transit', // Changed to in-transit for example
+                deliveryStatus: 'in-transit', 
                 finished: 'pending',
-                location: 'warehouse1' // Added for filtering
+                location: 'warehouse1' 
             },
             {
                 id: 4,
@@ -1038,7 +1038,7 @@
 
 
         let currentEditingId = null;
-        let nextDeliveryId = deliveries.length > 0 ? Math.max(...deliveries.map(d => d.id)) + 1 : 1; // Ensure unique IDs
+        let nextDeliveryId = deliveries.length > 0 ? Math.max(...deliveries.map(d => d.id)) + 1 : 1; 
 
         // Login function
         function login(event) {
@@ -1052,7 +1052,7 @@
                 document.getElementById('dashboardContainer').style.display = 'block';
                 document.getElementById('currentUser').textContent = `${username} (COO)`;
                 
-                // Show Logistics Dashboard by default on login
+              \
                 showSection('logisticsDashboardSection', document.getElementById('tabLogisticsDashboard'));
             } else {
                 alert('Please enter a username and password.');
@@ -1159,18 +1159,18 @@
             });
         }
 
-        // Format date and time for Deliveries Management table
+        
         function formatDateTime(dateString) {
             if (!dateString) return '';
             const date = new Date(dateString);
-            if (isNaN(date.getTime())) return 'Invalid Date'; // Handle invalid date strings
+            if (isNaN(date.getTime())) return 'Invalid Date'; 
             return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) + '<br>' + date.toLocaleTimeString('en-US', { hour: '2-digit', minute:'2-digit', hour12: true });
         }
 
         function formatTime(dateString) {
             if (!dateString) return '';
             const date = new Date(dateString);
-            if (isNaN(date.getTime())) return 'Invalid Time'; // Handle invalid date strings
+            if (isNaN(date.getTime())) return 'Invalid Time'; 
             return date.toLocaleTimeString('en-US', { hour: '2-digit', minute:'2-digit', hour12: true });
         }
 
@@ -1186,13 +1186,13 @@
             }
         }
 
-        // Edit status field with dropdown (using prompt for simplicity, could be a small inline select)
+        
         function editStatusField(id, field, currentValue) {
             const delivery = deliveries.find(d => d.id === id);
             if (!delivery) return;
 
             let options = [];
-            let displayOptions = []; // For user-friendly display in prompt
+            let displayOptions = []; 
             switch(field) {
                 case 'status':
                     options = ['urgent', 'pending', 'delivered'];
@@ -1215,7 +1215,7 @@
                     displayOptions = ['Pending', 'Finished'];
                     break;
                 default:
-                    return; // Do nothing if field is not a known status field
+                    return; 
             }
 
             const optionsText = options.map((opt, index) => `${index + 1}. ${displayOptions[index]}`).join('\n');
@@ -1235,8 +1235,7 @@
             // Prompt for new date/time in local format or ISO string for input[type="datetime-local"]
             const newValue = prompt(`Edit ${field} (e.g.,YYYY-MM-DDTHH:MM):\n(Current: ${currentValue})`, currentValue);
             if (newValue !== null && newValue.trim() !== '' && newValue !== currentValue) {
-                // Validate input format if necessary
-                // A simple check to ensure it's a valid datetime-local format
+            
                 if (new Date(newValue).toString() !== 'Invalid Date' && newValue.includes('T') && newValue.split('T')[1].length >= 5) {
                     delivery[field] = newValue.trim();
                     renderTable();
@@ -1251,13 +1250,13 @@
             currentEditingId = null;
             document.getElementById('modalTitle').textContent = 'Add New Delivery';
             // Clear all fields for new entry
-            document.getElementById('orderNo').value = `#${nextDeliveryId}`; // Pre-fill with a suggestion
+            document.getElementById('orderNo').value = `#${nextDeliveryId}`; 
             document.getElementById('customer').value = '';
             document.getElementById('status').value = 'pending';
             document.getElementById('stock').value = 'with-stock';
             document.getElementById('priority').value = 'pre-ops';
             document.getElementById('driver').value = '';
-            // Set current datetime for 'Created' and 'Start Time' for convenience
+           
             const now = new Date();
             const year = now.getFullYear();
             const month = (now.getMonth() + 1).toString().padStart(2, '0');
@@ -1268,11 +1267,11 @@
 
             document.getElementById('createdDate').value = currentDateTime;
             document.getElementById('startTime').value = currentDateTime;
-            document.getElementById('endTime').value = ''; // End time usually left blank for new delivery
+            document.getElementById('endTime').value = ''; 
             document.getElementById('deliveryStatus').value = 'pending';
             document.getElementById('finished').value = 'pending';
 
-            document.getElementById('deliveryModal').style.display = 'flex'; // Use flex to center
+            document.getElementById('deliveryModal').style.display = 'flex'; 
         }
 
         // Edit delivery
@@ -1292,9 +1291,9 @@
             document.getElementById('startTime').value = delivery.startTime;
             document.getElementById('endTime').value = delivery.endTime;
             document.getElementById('deliveryStatus').value = delivery.deliveryStatus;
-            document.getElementById('finished').value = delivery.finished; // Set finished status
+            document.getElementById('finished').value = delivery.finished;
 
-            document.getElementById('deliveryModal').style.display = 'flex'; // Use flex to center
+            document.getElementById('deliveryModal').style.display = 'flex'; 
         }
 
         // Save Delivery (Add or Update)
@@ -1324,7 +1323,7 @@
                 const deliveryIndex = deliveries.findIndex(d => d.id === currentEditingId);
                 if (deliveryIndex > -1) {
                     deliveries[deliveryIndex] = {
-                        ...deliveries[deliveryIndex], // Keep existing properties like location if not in modal
+                        ...deliveries[deliveryIndex], 
                         orderNo,
                         customer,
                         status,
@@ -1361,7 +1360,7 @@
             }
 
             closeModal();
-            renderTable(); // Re-render table to show changes
+            renderTable(); 
         }
 
         // Close modal
@@ -1447,7 +1446,7 @@
 
         // Filter Table
         function filterTable() {
-            renderTable(); // Re-render table with current filter values
+            renderTable();
         }
 
         function renderLogisticsDashboard() {
@@ -1540,13 +1539,10 @@
         // Placeholder for logistics actions
         function scheduleDelivery(customer, model) {
             alert(`Scheduling delivery for ${customer}, Model: ${model}. (Functionality to be implemented)`);
-            // You would typically open a modal to fill in truck, date, time etc.
         }
 
         function markDeliveryCompleted(id) {
             alert(`Marking delivery ID ${id} as completed. (Functionality to be implemented)`);
-            // In a real app, you'd find the delivery in logisticsData.scheduledDeliveries
-            // and update its status, then re-render the table.
             const scheduledDeliveryIndex = logisticsData.scheduledDeliveries.findIndex(d => d.id === id);
             if (scheduledDeliveryIndex > -1) {
                 logisticsData.scheduledDeliveries[scheduledDeliveryIndex].status = 'completed';
@@ -1557,8 +1553,6 @@
 
         // Initial render when the page loads
         document.addEventListener('DOMContentLoaded', () => {
-            // Check if user is "logged in" (for demo purposes, just check if dashboard should be shown)
-            // In a real app, you'd use local storage or session storage for login state
             if (document.getElementById('dashboardContainer').style.display === 'block') {
                 showSection('logisticsDashboardSection', document.getElementById('tabLogisticsDashboard'));
             }
