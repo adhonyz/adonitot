@@ -1,18 +1,25 @@
 IT Elective 1 - Final Project
 
+# 🤝 Team Members
+    * Dagle,Adhonyz Jefferzon R. 
+    * Dian, Bea Sharysse 
+    * Lingahan, Ayanna Mae 
+
 # 📝 Project Overview
 
-This project is a web-based **[e.g., Dashboard, Appointment System, Inventory Management System]** developed as the final project for IT Elective 1. It aims to provide a **the system aims to streamline operations, reduce downtime, and improve customer fulfillment rates—making the overall workflow more efficient and reliable and a simple login and data display.
+This project is a web-based Delivery Tracking System for ContainerBoard and Packaging Company Inc. developed as the final project for IT Elective 1. It aims to   streamlines the delivery operations, reduce repetitive manual tasks and minimize delays and errors.
 
 The system demonstrates fundamental web development concepts and integration with cloud services for deployment and potential backend functionalities.
 
 ## ✨ Features
+User Login/Authentication: (in a static login page, so anyone can access it for the meantime.)
+Dashboard/Data Display Page:
+    * shows current status of delivery operations
+Deliveries Page:
+    * shows every details of each customer
+    * can update each status and add new customer with its info.
 
-User Login/Authentication:** (If you implement Firebase Auth later, describe it here. If it's just a static login page, mention that).
-[Dashboard/Data Display Page]:** Shows key information or data.
-[Another Functional Page (e.g., Data Entry
 # 💻 Technologies Used
-
 Frontend:
     * HTML5
     * CSS3
@@ -21,15 +28,9 @@ Frontend:
     * Nodejs
 	
 Cloud Platform & Hosting:
-    * Firebase Hosting  for deploying the static web pages.
-    * GitHub / GitLab / Bitbucket (Specify which one you chose)
+    * Firebase Hosting
+    * GitHub
 
-# 🌐 Live Deployment
-
-This application is deployed and hosted on Firebase Hosting:
-
-Live URL: https://packagingcom-25570.web.app
-Git Hub: https://github.com/adhonyz/adonitot.git
 
 # ⚙️ Deployment Process (Briefly explain the steps you took)
 
@@ -43,12 +44,6 @@ The project was deployed using the Firebase Command Line Interface (CLI).
 6.  Renaming the main entry point file (`Dashboard.html`) to `index.html` within the `public` directory.
 7.  Deploying the project using `firebase deploy`.
 
-# 🤝 Team Memberswoo
-
-* Dagle,Adhonyz Jefferzon R. 
-* Dian, Bea Sharysse 
-* Lingahan, Ayanna Mae 
-    
 
 # 🗓️ Development Log / Milestones 
 
