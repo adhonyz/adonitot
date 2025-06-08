@@ -47,7 +47,7 @@ The project was deployed using the Firebase Command Line Interface (CLI).
 
 #Development Log
 
-* **[Date, e.g., June 5, 2025]:** Initial repository setup and project initialization.
-* **[Date, e.g., June 6, 2025]:** Developed Frontend and Backend`Dashboard.html` and `login.html` structure we combine it.
-* **[Date, e.g., June 7, 2025]:** Integrated Firebase Hosting and successfully deployed the first static pages.
+* **[Date, e.g., June 8, 2025]:** Initial repository setup and project initialization.
+* **[Date, e.g., June 8, 2025]:** Developed Frontend and Backend`Dashboard.html` and `login.html` structure we combine it.
+* **[Date, e.g., June 8, 2025]:** Integrated Firebase Hosting and successfully deployed the first static pages.
 * **[Date, e.g., June 8, 2025]:** Debugged deployment issues and pass the task before June 9 8am (e.g., file pathing, `index.html` conflicts).
