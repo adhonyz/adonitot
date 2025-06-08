@@ -18,7 +18,6 @@
             min-height: 100vh;
         }
 
-        /* Login Page Styles */
         .login-container {
             display: flex;
             justify-content: center;
@@ -95,8 +94,8 @@
             opacity: 0.9;
         }
 
-        /* Dashboard Styles */
-        .dashboard-container { /* Renamed from .dashboard to avoid confusion with internal sections */
+        
+        .dashboard-container { 
             display: none;
             min-height: 100vh;
         }
@@ -438,7 +437,6 @@
             fill: #fff;
         }
 
-        /* Modal Styles */
         .modal {
             display: none;
             position: fixed;
@@ -1447,12 +1445,11 @@
             }
         }
 
-        // Filter Table (called by dropdowns and search input)
+        // Filter Table
         function filterTable() {
             renderTable(); // Re-render table with current filter values
         }
 
-        // --- Logistics Dashboard Functions ---
         function renderLogisticsDashboard() {
             renderLogisticsDashboardMetrics();
             renderItemsReadyForDeliveryTable();
@@ -1558,7 +1555,7 @@
         }
 
 
-        // Initial render when the page loads (if already logged in, otherwise after login)
+        // Initial render when the page loads
         document.addEventListener('DOMContentLoaded', () => {
             // Check if user is "logged in" (for demo purposes, just check if dashboard should be shown)
             // In a real app, you'd use local storage or session storage for login state
