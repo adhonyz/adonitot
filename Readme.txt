@@ -29,6 +29,7 @@ Cloud Platform & Hosting:
 This application is deployed and hosted on Firebase Hosting:
 
 Live URL: https://packagingcom-25570.web.app
+Git Hub: https://github.com/adhonyz/adonitot.git
 
 # ⚙️ Deployment Process (Briefly explain the steps you took)
 
