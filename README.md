@@ -7,6 +7,8 @@
     Dian, Bea Sharysse 
     Lingahan, Ayanna Mae 
 
+## Live Site
+https://packagingcom-25570.web.app/?fbclid=IwY2xjawKytZ1leHRuA2FlbQIxMQABHvydSKscOjVz5dNow4T7Hi4lsfMryjmWvBYGtMxCq_YqFk6MDiGb0Rv6Rrf1_aem_ocRlEeY9k6od9GFDTtJ95w
 ## Project Overview
 
 This project is a web-based Delivery Tracking System for ContainerBoard and Packaging Company Inc. developed as the final project for IT Elective 1. It aims to   streamlines the delivery operations, reduce repetitive manual tasks and minimize delays and errors.
